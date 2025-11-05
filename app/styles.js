@@ -172,43 +172,41 @@ const styles = StyleSheet.create({
 
   // Timeline styles
   timelineContainer: {
-    width: "100%",
-    maxHeight: 300,
-    justifyContent: "space-between",
+    width: "100%", // fill horizontal space
+    gap: 8, // spacing between items
   },
+
   timelineItem: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 8,
+    width: "100%",
   },
+
   dot: {
-    width: 14,
-    height: 14,
-    borderRadius: 7,
-    marginRight: 12,
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    marginRight: 10,
   },
+
   card: {
     flex: 1,
-    paddingVertical: 10,
-    paddingHorizontal: 18,
+    paddingVertical: 8,
+    paddingHorizontal: 15,
     borderRadius: 10,
     justifyContent: "center",
-    elevation: 2,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 3,
   },
+
   day: {
     fontWeight: "bold",
-    fontSize: 15,
+    fontSize: 14,
     marginBottom: 2,
-    color: "#001F54",
   },
+
   routineText: {
-    fontSize: 15,
-    color: "#001F54",
+    fontSize: 14,
   },
+
   restText: {
     color: "#999",
     fontStyle: "italic",

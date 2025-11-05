@@ -13,15 +13,15 @@ export default function Recommendation() {
       desc: "Perfect for balanced recovery and all-round progress.",
     },
     "4 days": {
-      name: "Upper / Lower",
+      name: "Upper/Lower",
       desc: "A smart balance of strength and hypertrophy across the week.",
     },
     "5 days": {
-      name: "P / P / L | U / L",
+      name: "Push/Pull/Legs + Upper/Lower",
       desc: "Ideal for muscle growth and training variety.",
     },
     "6 days": {
-      name: "Push / Pull / Legs",
+      name: "Push/Pull/Legs",
       desc: "High-frequency training with optimal recovery windows.",
     },
   };

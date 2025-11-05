@@ -13,7 +13,7 @@ export default function Index() {
         <Text style={styles.logo}>🏋️‍♂️</Text>
         <Text style={styles.title}>FitSplit</Text>
         <Text style={styles.subtitle}>
-          Personalised workout splits{"\n"}designed around your schedule
+          Personalised workout splits{"\n"}designed around your schedule.
         </Text>
 
         <TouchableOpacity

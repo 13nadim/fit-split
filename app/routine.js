@@ -10,44 +10,84 @@ export default function Routine() {
 
   const routines = {
     "3 days": {
-      name: "Full Body Workout",
-      week: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      name: "Full Body",
+      week: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
       routine: [
-        "Workout",
+        "Full Body",
         "Rest",
-        "Workout",
+        "Full Body",
         "Rest",
-        "Workout",
+        "Full Body",
         "Rest",
         "Rest",
       ],
     },
     "4 days": {
-      name: "Upper / Lower Split",
-      week: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      name: "Upper/Lower",
+      week: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
       routine: ["Upper", "Lower", "Rest", "Upper", "Lower", "Rest", "Rest"],
     },
     "5 days": {
-      name: "Push / Pull / Legs | Upper / Lower",
-      week: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      name: "Push/Pull/Legs + Upper/Lower",
+      week: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
       routine: ["Push", "Pull", "Legs", "Rest", "Upper", "Lower", "Rest"],
     },
     "6 days": {
-      name: "Push / Pull / Legs",
-      week: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+      name: "Push/Pull/Legs",
+      week: [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ],
       routine: ["Push", "Pull", "Legs", "Rest", "Push", "Pull", "Legs"],
     },
   };
 
   const selected = routines[days] || {
     name: "Custom Routine",
-    week: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    week: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
     routine: ["Workout", "Rest", "Workout", "Rest", "Workout", "Rest", "Rest"],
   };
 
   return (
     <LinearGradient colors={["#cbe4ff", "#ffffff"]} style={styles.gradient}>
-      {/* Main container */}
+      {/* Main container with space-between layout */}
       <View style={styles.mainContainer}>
         {/* Top Section */}
         <View style={styles.topContainer}>
@@ -58,12 +98,12 @@ export default function Routine() {
             <View style={[styles.progressDot, styles.activeDot]} />
           </View>
 
-          <Text style={styles.logo}>🏋️‍♂️💤</Text>
+          <Text style={styles.logo}>💪</Text>
           <Text style={styles.question}>Your Weekly Routine</Text>
           <Text style={styles.splitName}>{selected.name}</Text>
         </View>
 
-        {/* Middle Section - Timeline */}
+        {/* Middle Section - Timeline centered */}
         <View style={styles.timelineContainer}>
           {selected.week.map((day, index) => {
             const isRest = selected.routine[index] === "Rest";
@@ -91,21 +131,11 @@ export default function Routine() {
           })}
         </View>
 
-        {/* Bottom Section - Buttons */}
-
-        <TouchableOpacity
-          style={styles.backButton}
-          onPress={() =>
-            router.push({ pathname: "/recommendation", params: { days } })
-          }
-        >
-          <Text style={styles.backButtonText}>Go Back</Text>
-        </TouchableOpacity>
-
+        {/* Bottom Section - Button */}
         <View style={styles.bottomContainer}>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => router.push("/")}
+            onPress={() => router.push({ pathname: "/", params: { days } })}
           >
             <Text style={styles.buttonText}>Return Home</Text>
           </TouchableOpacity>

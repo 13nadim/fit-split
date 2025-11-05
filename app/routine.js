@@ -92,21 +92,22 @@ export default function Routine() {
         </View>
 
         {/* Bottom Section - Buttons */}
+
+        <TouchableOpacity
+          style={styles.backButton}
+          onPress={() =>
+            router.push({ pathname: "/recommendation", params: { days } })
+          }
+        >
+          <Text style={styles.backButtonText}>Go Back</Text>
+        </TouchableOpacity>
+
         <View style={styles.bottomContainer}>
           <TouchableOpacity
             style={styles.button}
             onPress={() => router.push("/")}
           >
             <Text style={styles.buttonText}>Return Home</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.backButton}
-            onPress={() =>
-              router.push({ pathname: "/recommendation", params: { days } })
-            }
-          >
-            <Text style={styles.backButtonText}>Go Back</Text>
           </TouchableOpacity>
         </View>
       </View>

@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 16,
-    color: "#dcedffff",
+    color: "#ffffffff",
     textAlign: "center",
     lineHeight: 22,
     marginBottom: 10,
@@ -75,6 +75,21 @@ const styles = StyleSheet.create({
     marginBottom: 50,
   },
 
+  wtw: {
+    textAlign: "left",
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#000000ff",
+    marginBottom: 8,
+  },
+
+  description: {
+    textAlign: "left",
+    fontSize: 16,
+    color: "#000000ff",
+    lineHeight: 22,
+  },
+
   // Progress dots
   progressContainer: {
     flexDirection: "row",
@@ -93,11 +108,7 @@ const styles = StyleSheet.create({
   },
 
   // Middle section (options/buttons)
-  middleSection: {
-    flex: 1, // fill available space
-    justifyContent: "center", // center vertically
-    alignItems: "center", // center horizontally
-  },
+
   button: {
     backgroundColor: "#007BFF",
     paddingVertical: 12,
@@ -110,6 +121,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 3,
     marginTop: 20,
+    marginBottom: 5,
   },
   buttonText: {
     color: "#fff",
@@ -212,6 +224,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 25,
+  },
+
+  middleContainer: {
+    width: "100%",
+    alignItems: "flex-start",
+    marginBottom: 150, // pull it upward slightly
   },
 
   optionsContainer: {

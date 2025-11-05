@@ -47,7 +47,12 @@ export default function Recommendation() {
           <Text style={styles.logo}>🗒️</Text>
           <Text style={styles.question}>Your Optimal Workout Split</Text>
           <Text style={styles.splitName}>{selected.name}</Text>
-          <Text style={styles.subtitle}>{selected.desc}</Text>
+        </View>
+
+        {/* Middle Section - Why this works */}
+        <View style={styles.middleContainer}>
+          <Text style={styles.wtw}>Why this works:</Text>
+          <Text style={styles.description}>{selected.desc}</Text>
         </View>
 
         {/* Bottom Section - Buttons */}

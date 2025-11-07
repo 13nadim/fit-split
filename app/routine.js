@@ -2,9 +2,9 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
-import { routines } from "./data";
-import ProgressDots from "./progressDots";
-import styles from "./styles";
+import ProgressDots from "./components/progressDots";
+import { routines } from "./constants/data";
+import styles from "./styles/styles";
 
 export default function Routine() {
   const { days } = useLocalSearchParams();

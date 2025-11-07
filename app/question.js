@@ -1,10 +1,10 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
-import { options } from "./data";
-import ProgressDots from "./progressDots";
+import ProgressDots from "./components/progressDots";
+import { options } from "./constants/data";
 
-import styles from "./styles";
+import styles from "./styles/styles";
 
 export default function Question() {
   const router = useRouter();

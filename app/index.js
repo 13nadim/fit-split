@@ -3,7 +3,7 @@
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
-import styles from "./styles";
+import styles from "./styles/styles";
 
 export default function Index() {
   const router = useRouter();

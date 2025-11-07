@@ -34,14 +34,14 @@ FitSplit helps users plan their workout schedules efficiently by recommending th
   <table>
     <tr>
       <td align="center">
-        <img src="1.png" width="200px"><br>
+        <img src="1.PNG" width="200px"><br>
       </td>
       <td align="center">
-        <img src="2.png" width="200px"><br>
+        <img src="2.PNG" width="200px"><br>
         <td align="center">
-        <img src="3.png" width="200px"><br>
+        <img src="3.PNG" width="200px"><br>
           <td align="center">
-        <img src="4.png" width="200px"><br>
+        <img src="4.PNG" width="200px"><br>
       </td>
       </td>
       </td>

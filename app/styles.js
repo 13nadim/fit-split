@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  // General containers
   container: {
     flex: 1,
   },
@@ -23,7 +22,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 
-  // Logo / title / subtitle
   logo: {
     fontSize: 50,
     marginBottom: 20,
@@ -90,25 +88,6 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
 
-  // Progress dots
-  progressContainer: {
-    flexDirection: "row",
-    justifyContent: "center",
-    gap: 8,
-    marginBottom: 12,
-  },
-  progressDot: {
-    width: 30,
-    height: 4,
-    backgroundColor: "#e0e0e0",
-    borderRadius: 2,
-  },
-  activeDot: {
-    backgroundColor: "#007BFF",
-  },
-
-  // Middle section (options/buttons)
-
   button: {
     backgroundColor: "#007BFF",
     paddingVertical: 12,
@@ -132,9 +111,9 @@ const styles = StyleSheet.create({
   daysButton: {
     backgroundColor: "#007BFF",
     paddingVertical: 14,
-    width: "120%", // match the back button’s visual width
+    width: "120%",
     borderRadius: 10,
-    alignSelf: "center", // ensures it centers in the screen, not within a possibly smaller container
+    alignSelf: "center",
     paddingLeft: 15,
   },
 
@@ -144,7 +123,6 @@ const styles = StyleSheet.create({
     textAlign: "left",
   },
 
-  // Back / cancel buttons
   backButton: {
     borderWidth: 2,
     borderColor: "#a4d0ff",
@@ -170,10 +148,9 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
 
-  // Timeline styles
   timelineContainer: {
-    width: "100%", // fill horizontal space
-    gap: 8, // spacing between items
+    width: "100%",
+    gap: 8,
   },
 
   timelineItem: {
@@ -227,7 +204,7 @@ const styles = StyleSheet.create({
   middleContainer: {
     width: "100%",
     alignItems: "flex-start",
-    marginBottom: 150, // pull it upward slightly
+    marginBottom: 150,
   },
 
   optionsContainer: {

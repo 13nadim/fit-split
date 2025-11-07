@@ -1,4 +1,5 @@
-// index.js
+// Homepage for app
+
 import { LinearGradient } from "expo-linear-gradient";
 import { useRouter } from "expo-router";
 import { Text, TouchableOpacity, View } from "react-native";
